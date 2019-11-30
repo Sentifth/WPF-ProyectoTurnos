@@ -61,6 +61,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="frmLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frm_AtencionCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frm_CrearTickets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frm_Pantalla.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +84,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmLogin.xaml.cs">
+      <DependentUpon>frmLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AtencionCliente.xaml.cs">
+      <DependentUpon>frm_AtencionCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CrearTickets.xaml.cs">
+      <DependentUpon>frm_CrearTickets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Pantalla.xaml.cs">
+      <DependentUpon>frm_Pantalla.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -100,6 +128,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capaAccesoaDatos\capaAccesoaDatos.csproj">
+      <Project>{66075a56-082b-461e-9289-341339cc9684}</Project>
+      <Name>capaAccesoaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capaLogicadeNegocio\capaLogicadeNegocio.csproj">
+      <Project>{adbe655c-c2a8-48a1-bd55-d175384dadd6}</Project>
+      <Name>capaLogicadeNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

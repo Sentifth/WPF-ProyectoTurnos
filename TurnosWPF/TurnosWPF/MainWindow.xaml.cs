@@ -84,12 +84,9 @@ namespace TurnosWPF
             base.Show();
         }
 
-        private void Frm_SelectorInicio_FormClosed(object sender, FormClosedEventArgs e)
+        void MainWindow_Closed(object sender, EventArgs e)
         {
-            base.Dispose();
+            base.Close();
         }
-    }
-}
-
     }
 }

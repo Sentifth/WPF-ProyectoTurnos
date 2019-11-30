@@ -5,17 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TurnosWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="490" Width="890" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="490" Width="890" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Closed="MainWindow_Closed">
     <Grid>
-        <GroupBox Name="groupBox1" HorizontalAlignment="Left" Height="230" VerticalAlignment="Top" Width="870" Margin="10,143,0,0" FontFamily="Comic Sans MS" FontSize="36">
+        <Image  Margin="0" Name="image1"  Stretch="Fill" 
+           Source="C:\Users\Jayro\Source\Repos\WPF-ProyectoTurnos\TurnosWPF\TurnosWPF\Imagenes\fondo.jpg"/>
+        <GroupBox BorderThickness="0" Name="groupBox1" HorizontalAlignment="Left" Height="277" VerticalAlignment="Top" Width="870" Margin="10,143,0,0" FontFamily="Comic Sans MS" FontSize="36">
             <Grid>
-                <Button Name="btn_CrearTickets" Content="Tickets" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="173" FontSize="20" Click="Btn_CrearTickets_Click"/>
-                <Button Name="btn_AtenderClientes" Margin="227,99,458,93" Content="Customer service" FontSize="20" Click="Btn_AtenderClientes_Click"/>
-                <Button Name="btn_Pantalla" Content="Screen" Margin="464,97,221,95" FontSize="20" Click="Btn_Pantalla_Click"/>
-                <Button Name="btn_Configurar" Content="Settings" FontSize="20" Height="30" Margin="675,97,10,97" Click="Btn_Configurar_Click"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="373*"/>
+                    <ColumnDefinition Width="485*"/>
+                </Grid.ColumnDefinitions>
+                <Button  Name="btn_CrearTickets" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="175" FontSize="20" Click="Btn_CrearTickets_Click" Height="134">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Jayro\Source\Repos\WPF-ProyectoTurnos\TurnosWPF\TurnosWPF\Imagenes\tickets.ico" HorizontalAlignment="Left" Height="130" Width="133"/>
+                    </StackPanel>
+                </Button>
+                <TextBlock Foreground="#FFFFFF" Text="Tickets" VerticalAlignment="Center" Margin="55,53,230.741,184" FontSize="24"/>
+                <Button  Name="btn_AtenderClientes" Margin="227,99,458,38" FontSize="20" Click="Btn_AtenderClientes_Click" Grid.ColumnSpan="2">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Jayro\Source\Repos\WPF-ProyectoTurnos\TurnosWPF\TurnosWPF\Imagenes\customer.ico" HorizontalAlignment="Left" Height="142" Width="173"/>
+                    </StackPanel>
+                </Button>
+                <TextBlock Foreground="#FFFFFF" Text="Customer Service" Margin="216,53,443,177" FontSize="24" Grid.ColumnSpan="2"/>
+                <Button Name="btn_Pantalla" Margin="91.259,97,221,38" FontSize="20" Click="Btn_Pantalla_Click" Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Jayro\Source\Repos\WPF-ProyectoTurnos\TurnosWPF\TurnosWPF\Imagenes\screen.ico" HorizontalAlignment="Left" Height="152" Width="141"/>
+                    </StackPanel>
+                </Button>
+                <TextBlock Foreground="#FFFFFF" Text="Screen" Margin="137,51,262,179" FontSize="24" Grid.Column="1"/>
+                <Button Name="btn_Configurar" FontSize="20" Margin="302.259,99,10,38" Click="Btn_Configurar_Click" Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Jayro\Source\Repos\WPF-ProyectoTurnos\TurnosWPF\TurnosWPF\Imagenes\settings.ico" HorizontalAlignment="Left" Height="128" Width="125"/>
+                    </StackPanel>
+                </Button>
+                <TextBlock Foreground="#FFFFFF" Text="Settings" Margin="338,51,44,179" FontSize="24" Grid.Column="1"/>
             </Grid>
         </GroupBox>
-        <Label Content="Menu" FontSize="50" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Margin="387,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Menu" Foreground="#FFFFFF" FontSize="50" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Margin="387,34,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
