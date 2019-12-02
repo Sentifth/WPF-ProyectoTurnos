@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TurnosWPF"
         mc:Ignorable="d"
-        Title="frmLogin" Height="450" Width="800">
-    <Grid>
-        
+        Title="Login" Height="450" Width="800">
+    <Grid Height="450" Width="800">
+        <GroupBox Margin="0,0,59,52" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+            <GroupBox.Header>
+                <TextBlock Text=""/>
+            </GroupBox.Header>
+            <Canvas Height="327" Width="700" >
+                <CheckBox Name="chk_cambiar_clave" Height="27" Width="133" TabIndex="9" Margin="429,204,238,219" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Cambiar Clave</CheckBox>
+                <TextBox Name="txt_nueva_clave" Height="20" Width="333" TabIndex="8" Margin="229,153,238,277" HorizontalAlignment="Right" VerticalAlignment="Bottom" TextWrapping="Wrap" ></TextBox>
+                <TextBox Name="txt_clave" Height="20" Width="333" TabIndex="7" Margin="229,102,238,328" HorizontalAlignment="Right" VerticalAlignment="Bottom" TextWrapping="Wrap" ></TextBox>
+                <Label Name="label4" Height="28" Width="345" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="5" Background="White" Margin="236,51,219,371" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Administrador</Label>
+                <Label Name="lbl_nueva_clave" Height="34" Width="155" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="6" Foreground="Indigo" Background="White" Margin="87,149,558,267" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Nueva Clave</Label>
+                <Label Name="label3" Height="34" Width="81" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="4" Foreground="Indigo" Background="White" Margin="87,96,632,320" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Clave</Label>
+                <Label Name="label2" Height="34" Width="102" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="3" Foreground="Indigo" Background="White" Margin="87,45,611,371" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Usuario</Label>
+                <Button Name="btn_cancelar" Height="45" Width="107" TabIndex="1"  Margin="376,237,317,168" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Cancelar</Button>
+                <Button Name="btn_aceptar" Height="45" Width="107" TabIndex="0"  Margin="185,237,508,168" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Aceptar</Button>
+            </Canvas>
+        </GroupBox>
+        <Label Name="label1" Height="38" Width="107" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="2" Background="Transparent" Margin="0,0,377,402" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Gestion De Turnos</Label>
     </Grid>
 </Window>

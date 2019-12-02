@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="frm_CrearTickets" Height="450" Width="800">
     <Grid>
-        
+        <DataGrid AutoGenerateColumns="False" Name="dataGridView1" CanUserAddRows="True" ItemsSource="{Binding TestBinding}" Margin="0,0,0,306" >
+        <DataGrid.Columns>
+            <DataGridTextColumn  IsReadOnly="True" Binding="{Binding Path=id}" ></DataGridTextColumn>
+            <DataGridTextColumn Header="Code" IsReadOnly="True"  Binding="{Binding Path=codigo}" Width="130"></DataGridTextColumn>
+            <DataGridTextColumn Header="Classification" IsReadOnly="True"  Binding="{Binding Path=tipo_atencion}" Width="130"></DataGridTextColumn>
+            </DataGrid.Columns>
+         </DataGrid>
+        <Button  BorderThickness="0"  HorizontalAlignment="Left" Margin="285,250,0,0" VerticalAlignment="Top" Width="199" Height="150" Background="Transparent" AutomationProperties.Name="btn_CrearTicket" Click="Btn_CrearTicket"  >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="C:\Users\Jayro\Source\Repos\WPF-ProyectoTurnos\TurnosWPF\TurnosWPF\Imagenes\print.ico" HorizontalAlignment="Left" Height="152" Width="141" />
+            </StackPanel>
+        </Button>
+        <TextBlock Foreground="Black" Text="Print" Margin="341,187,360,174" FontSize="36" FontFamily="Comic Sans MS"/>
+
     </Grid>
 </Window>

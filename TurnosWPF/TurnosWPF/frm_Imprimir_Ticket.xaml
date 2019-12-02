@@ -1,0 +1,16 @@
+﻿<Window x:Class="TurnosWPF.frm_Imprimir_Ticket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TurnosWPF"
+        mc:Ignorable="d"
+        Title="Print" Height="352.213" Width="493.058">
+    <Grid>
+        <Label Name="lbl_Fecha" Content="Fecha"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="209,250,0,0" Height="26" Width="130"/>
+        <Label Name="lbl_NumeroTicket" Content="Numero Ticket" HorizontalAlignment="Left" Margin="186,117,0,0" VerticalAlignment="Top" Height="95" Width="88"/>
+        <Label Name="lbl_Clasificacion" Content="lbl_Clasificacion" HorizontalAlignment="Left" Margin="186,42,0,0" VerticalAlignment="Top" AutomationProperties.Name="lbl_Clasificacion"/>
+        <Label Name="Label1"  Content="Label" HorizontalAlignment="Left" Margin="71,250,0,0" VerticalAlignment="Top"/>
+        <Label Name="Label2" Content="Label" HorizontalAlignment="Left" Margin="377,250,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

@@ -204,5 +204,6 @@ namespace capaAccesoaDatos
             this.Direccion = ParameterDirection.Output;
         }
     }
+
 }
 
